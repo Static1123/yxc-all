@@ -6,11 +6,16 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="yxc-domain" />
         <module name="yxc-framework" />
+        <module name="yxc-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="yxc-all" target="1.5" />
+      <module name="yxc-domain" target="1.5" />
       <module name="yxc-framework" target="1.5" />
+      <module name="yxc-web" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
