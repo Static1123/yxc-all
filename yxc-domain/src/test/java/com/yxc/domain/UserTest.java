@@ -21,6 +21,8 @@ import java.util.Map;
 public class UserTest {
     private static ApplicationContext context = new ClassPathXmlApplicationContext("classpath:db.xml");
 
+    private ThreadLocal<String> threadLocal;
+
     @Autowired
     private UserDao userDao;
 

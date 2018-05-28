@@ -12,10 +12,10 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="yxc-all" target="1.5" />
-      <module name="yxc-domain" target="1.5" />
-      <module name="yxc-framework" target="1.5" />
-      <module name="yxc-web" target="1.5" />
+      <module name="yxc-all" target="1.8" />
+      <module name="yxc-domain" target="1.8" />
+      <module name="yxc-framework" target="1.8" />
+      <module name="yxc-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
