@@ -6,7 +6,7 @@ import java.util.Date;
  * @author Static
  */
 public class VolatileDemo {
-    private static boolean isOver = false;
+    private volatile static boolean isOver = false;
 
     public static void main(String[] args) {
         Thread thread = new Thread(new Runnable() {
