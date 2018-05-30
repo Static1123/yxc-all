@@ -16,6 +16,7 @@ import javax.annotation.Resource;
 import java.util.List;
 import java.util.Map;
 
+//SpringJUnit4ClassRunner 自动创建上下文对象
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:db.xml"})
 public class UserTest {
