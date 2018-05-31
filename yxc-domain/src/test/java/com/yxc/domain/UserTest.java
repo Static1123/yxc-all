@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
@@ -18,11 +19,11 @@ import java.util.Map;
 
 //SpringJUnit4ClassRunner 自动创建上下文对象
 @RunWith(SpringJUnit4ClassRunner.class)
+//激活当前配置文件
+@ActiveProfiles("dev")
 @ContextConfiguration(locations = {"classpath:db.xml"})
 public class UserTest {
     private static ApplicationContext context = new ClassPathXmlApplicationContext("classpath:db.xml");
-
-    private ThreadLocal<String> threadLocal;
 
     @Autowired
     private UserDao userDao;
